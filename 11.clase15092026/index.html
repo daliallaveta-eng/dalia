@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../asset/css/miestilo12.css">
+</head>
+<body>
+    <h1 class="titulo">CREACION DE TABLAS</h1>
+   <h2 class="titulo">listado de estudiantes</h2>
+    <p>
+        Nombre:
+    <input type="text" id="Nombre" placeholder="nombre">
+    <br>
+    </p>
+    <p>
+        apellido:
+    <input type="apellido" id="apellido" >
+    <br>
+    </p>
+    <p>
+        FecNacimiento:
+    <input type="date" id="fecNacimiento">
+    <br>
+    </p>
+    <p>
+        Edad
+    <input type="text" id="Edad" placeholder="Edad">
+    <br>
+    </p>
+    <p>
+        Genero
+        <select id="Genero">
+            <option value=" ">seleccione genero</option>
+            <option value="masculino">masculino</option>
+            <option value="femenino">femenino</option>
+        </select>
+    <br>
+    </p>
+    <button onclick="adicionarEstudiante()">Adicionar Estudiante</button>
+    <div id="respuesta"></div>
+     
+    <table>
+        <thead>
+        <tr>
+            <th>Nro</th>
+            <th>Nombre</th>
+            <th>apellido</th>
+            <th>fecNacimiento</th>
+            <th>Edad</th>
+            <th>Genero</th>
+        </tr>
+     </thead>
+     <tbody id="datos">
+<tr>
+    <td>1</td>
+    <td>Abril</td>
+    <td>flores</td>
+    <td>12/12/2000</td>
+    <td>26</td>
+    <td>femenino</td>
+</tr>
+        </tbody>
+    </table>
+    <script src="./script/ejemplo1.js"></script>
+</body>
+</html>
