@@ -26,9 +26,15 @@ function eliminarTarea(indice){
 }
 function mostrarTareas() {
     console.log(" Mostrando lista de tareas:");
+    const contenedor = document.getElementById("respuesta");
+     let respuestaHtml=`<ul>`;
     tareas.forEach((tarea, indice) => {
        console.log(`${indice + 1}. [${tarea.completada }] ${tarea.descripcion}`);
+       let respuestaHtml=`<ul>`;
+       respuestaHtml += `<li>${indice + 1}. [${tarea.completada}] ${tarea.descripcion}</li>`;
+       respuestaHtml += `</ul>`;
        });
+       contenedor.innerHTML=respuestaHtml;
 }
 //adicionar las tareas
 agregarTarea("Comprar leche", "Completado");
